@@ -1,7 +1,7 @@
-export let xxx = "https://us-central1-spheric-entity-401507.cloudfunctions.net/function-8";
-export let aaa = "https://us-central1-spheric-entity-401507.cloudfunctions.net/func-api";
-export let bbb = "/gispostlinestring";
-export let ccc = "/gitpostpolygon";
+export let xxx = "https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/rachma-getjson";
+export let aaa = "https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/rachma-postpoint";
+export let bbb = "https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/rachma-postlinestring";
+export let ccc = "https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/rachma-postpolygon";
 export let qqq = "https://asia-southeast2-gisuas-413104.cloudfunctions.net/geointersect";
 export let www = "https://asia-southeast2-gisuas-413104.cloudfunctions.net/geowithinX";
 export let eee = "https://asia-southeast2-gisuas-413104.cloudfunctions.net/near";
