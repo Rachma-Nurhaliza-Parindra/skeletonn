@@ -1,2 +1,3 @@
 # skeleton
-Frontend pengumpulan tugas sesuai kemauan dosen
+NPM : 1214056
+Nama : Rachma Nurhaliza Parindra
