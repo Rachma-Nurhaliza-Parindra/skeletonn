@@ -1,35 +1,35 @@
 openapi: 3.0.3
 info:
-  title: DOKUMEN API GIS DZIKRI - OpenAPI 3.0
+  title: DOKUMEN API GIS RACHMA NURHALIZA PARINDRA - OpenAPI 3.0
   description: >-
-    Disini Berisi Semua Dokumentasi API GIS Dzikri
-  termsOfService: https://github.com/Dzikri7/Dzikri7.github.io/
+    Penjelasan informasi ada disini
+  termsOfService: https://rachma-nurhaliza-parindra.github.io/backendrachma/
   contact:
-    email: izzatulhaq8@gmail.com
+    email: rachmanurhalizastudent@gmail.com
   license:
-    name: Dzikri Backend
-    url: https://pkg.go.dev/github.com/Dzikri7/backendsuperimbagelo
+    name: Fancy Backend
+    url: https://pkg.go.dev/github.com/Rachma-Nurhaliza-Parindra/backendrachma
   version: 1.0.11
 externalDocs:
   description: Repo GCF
-  url: https://pkg.go.dev/github.com/Dzikri7/backendsuperimbagelo
+  url: https://pkg.go.dev/github.com/Rachma-Nurhaliza-Parindra/backendrachma
 servers:
-  - url: https://asia-southeast2-vivid-vent-401501.cloudfunctions.net
+  - url: https://us-central1-spheric-entity-401507.cloudfunctions.net
 tags:
   - name: Create GIS
     description: Data Geo Spasial
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://pkg.go.dev/github.com/Dzikri7/backendsuperimbagelo
+      url: https://pkg.go.dev/github.com/Rachma-Nurhaliza-Parindra/backendrachma
   - name: auth
     description: Auth to Access to API
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://pkg.go.dev/github.com/Dzikri7/backendsuperimbagelo
+      url: https://pkg.go.dev/github.com/Rachma-Nurhaliza-Parindra/backendrachma
   - name: user
     description: Get Token and Authorize
 paths:
-  /function-Token:  # Penambahan endpoint Create GIS
+  /func-auth:  # Penambahan endpoint Create GIS
     post:
       tags:
         - Create GIS
@@ -65,19 +65,16 @@ components:
           properties:
             name:
               type: string
-              example: "LOKASI"
+              example: "Nama Location"
         geometry:
           type: object
           properties:
+            coordinates:
+              type: array
+              example: [ [0, 0] ]
             type:
               type: string
               example: "Point"
-            coordinates:
-              type: array
-              items:
-                - type: array
-                  items:
-                    - [125.6, 10.1]
   securitySchemes:
     SECRET:
       type: apiKey
